@@ -24,20 +24,9 @@ public class TemplateIO {
 
         while (--t >= 0) {
 
-            pw.println(solve(nextLong()));
         }
 
         pw.flush();
-    }
-
-    private static long solve(long n) {
-        long sum = n * (n + 1)/2;
-        long k = 1;
-        while (n > 0) {
-            n >>= 1;
-            k <<= 1;
-        }
-        return sum - k*2 + 2;
     }
 
 }
